@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+	int dn,bn[32],i=0,j,choice;
+	printf("Enter The Decimal Number = ");
+	scanf("%d",&dn);
+	while(dn>0)
+	{
+		bn[i]=dn%2;
+		dn=dn/2;
+		i++;
+	}
+	printf("Converted Binary Number = ");
+	for(j=i-1;j>=0;j--)
+	{
+		printf("%d ",bn[j]);
+	}
+}
